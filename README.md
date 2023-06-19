@@ -3,6 +3,8 @@ This is a course project repo for CSE231(Compiler Construction) at UCSD.
 
 The compiler is designed to compile a programming language called `snake` and implemented in Rust.
 
+The compiler name `EggEater` is a snake name:)
+
 The `snake` language supports basic unary/binary operations, vairable bindings, `if`,`loop`,`block`, `break` expressions, structural and reference comparsion, function calls, heap data allocations and garbage collection.
 
 ### Syntax
