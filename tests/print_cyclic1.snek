@@ -1,0 +1,8 @@
+(let (
+    (x (tuple 1 2 3))
+)
+(block
+    (set-tuple x 2 x)
+    (print x)
+)
+)

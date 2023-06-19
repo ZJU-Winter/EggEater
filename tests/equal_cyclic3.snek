@@ -1,0 +1,12 @@
+(let (
+    (x (tuple 1 2 3))
+    (y (tuple 1 2 3))
+    (z (tuple 1 2 3))
+)
+(block
+    (set-tuple x 2 x)
+    (set-tuple y 2 x)
+    (set-tuple z 2 x)
+    (equal y z)
+)
+)

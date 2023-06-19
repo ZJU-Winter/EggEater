@@ -1,0 +1,5 @@
+(fun (fun1 a b)
+    (+ a b)
+)
+
+(fun1 2)

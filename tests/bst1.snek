@@ -1,0 +1,27 @@
+(fun (search root key) (
+    if (= root nil) false (
+        if (= (index root 0) key) true (
+            if (< (index root 0) key) (search (index root 2) key) (search (index root 1) key)
+            )
+        )
+    )
+)
+
+(fun (insert root val) (
+    if (= root nil) (tuple val nil nil) (
+        if (< (index root 0) val) (tuple (index root 0) (index root 1) (insert (index root 2) val)) (tuple (index root 0) (insert (index root 1) val) (index root 2))
+        )
+    )
+)
+
+(let ((root (tuple))) (block
+        (set! root (insert root 3))
+        (set! root (insert root 1))
+        (set! root (insert root 2))
+        (set! root (insert root 4))
+        (set! root (insert root 5))
+        (print root)
+        (print (search root 1))
+        (search root 6)
+    )
+)

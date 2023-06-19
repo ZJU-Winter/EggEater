@@ -1,0 +1,5 @@
+(fun (add_points a b)
+    (tuple (+ (index a 0) (index b 0)) (+ (index a 1) (index b 1)))
+)
+
+(add_points (tuple 1 2) (tuple 2 4))

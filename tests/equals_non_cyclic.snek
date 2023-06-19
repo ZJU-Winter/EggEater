@@ -1,0 +1,19 @@
+(let (
+    (x (tuple 1 2 3))
+    (y (tuple 1 2 3))
+    (z (tuple 2 4 6))
+    (a 1)
+    (b 1)
+)
+(block
+    (print (equal x y))
+    (print (equal x x))
+    (print (equal x z))
+    (print (equal a b))
+
+    (print (= x x))
+    (print (= x y))
+    (print (= x z))
+    (print (= a b))
+)
+)

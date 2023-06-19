@@ -1,0 +1,11 @@
+(let (
+    (x (tuple 1 2 3))
+    (y (tuple 2 4 6))
+)
+(block
+    (set-tuple x 1 y)
+    (set-tuple y 2 x)
+    (print x)
+    (print y)
+)
+)

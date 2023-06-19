@@ -1,0 +1,11 @@
+(let (
+    (header (tuple 1 nil))
+)
+(block
+    (set-tuple header 1 (tuple 2 nil))
+    (set-tuple (index header 1) 1 (tuple 3 nil))
+    (set-tuple (index (index header 1) 1) 1 (tuple 4 nil))
+    (set-tuple (index (index (index header 1) 1) 1) 1 header)
+    (print header)
+)
+)

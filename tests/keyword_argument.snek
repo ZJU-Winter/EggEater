@@ -1,0 +1,5 @@
+(fun (fun1 a loop)
+    (+ a loop)
+)
+
+(fun1 2 10)
